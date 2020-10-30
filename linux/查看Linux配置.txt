@@ -10,8 +10,9 @@ free -h
 df -hl
 
 netstat -tunlp | grep 22
+netstat -tunlp | grep -e 18888 -e 8081 -e 18080 -e 36379
 
 tar -czvf package.tar.gz package
-tar -xzvf package.tar.gz
+tar -xzvf package.tar.gz -C ./test
 
 scp package.tar.gz yuxiaojie@m7-model-dev02:/home/yuxiaojie/test
