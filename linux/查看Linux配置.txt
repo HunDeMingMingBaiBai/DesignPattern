@@ -4,6 +4,8 @@ cat /proc/cpuinfo | grep "processor" | wc -l
 cat /proc/cpuinfo | grep "physical id" | sort | uniq | wc -l
 cat /proc/cpuinfo | grep "cpu cores" | wc -l
 
+cat /proc/cpuinfo | grep "model name"
+
 cat /proc/meminfo | grep MemTotal
 free -h
 
